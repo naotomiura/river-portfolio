@@ -3,11 +3,29 @@
 html {
   font-size: 100%;
 }
+
 body {
   color: #333;
   font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
   letter-spacing: 0.1em;
+　　　　text-align: center;
+  background:linear-gradient(45deg, #3bade3,#9844b7,#ea44d1);
+  background-size: 200% 200%;
+  animation: bggradient 20s ease infinite;
 }
+
+@keyframes bggradient{
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 a {
   color: #333;
   text-decoration: none;
