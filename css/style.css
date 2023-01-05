@@ -146,7 +146,7 @@ Header
   width: 100%;
   height: 100vh;
   background-color: var(--black-color);
-  color: #fff;
+  color: var(--white-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -177,7 +177,7 @@ Header
   margin-bottom: 20px;
 }
 #navi .menu a {
-  color: #fff;
+  color: var(--white-color);
   font-weight: bold;
 }
 #navi .btn {
@@ -392,7 +392,7 @@ Message
   padding-top: 74px;
   width: 80%;
   margin: auto; /*上下左右中央に*/
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
 }
 
@@ -410,14 +410,14 @@ Contact
   font-size: 30px;
   padding-top: 84px;
   position: relative;
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
 }
 
 .contact_title::before{
   content: "連絡先";
   position: absolute;
-  color: #fff;
+  color: var(--white-color);
   font-size: 0.2em;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -431,14 +431,14 @@ Contact
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .contact_name{
   font-size: 20px;
   padding-top: 30px;
   font-weight: bold;
-  color: #fff;
+  color: var(--white-color);
   position: relative;
   text-align: center;
 }
@@ -457,7 +457,7 @@ Contact
 .contact_sub-title{
   font-size: 12px;
   padding-top: 30px;
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
 }
 
