@@ -94,10 +94,9 @@ Header
 	transform-origin:center;/*変化する基点を中心からに設定*/
 }
 
-#container,
-#footer{
-	position: relative;/*#header-imgよりも配置を上にするためにrelativeをつける*/
-	z-index: 2/*#header-imgよりもz-indexの値を大きな数値にして上に表示*/
+#container{
+  position: relative;/*#header-imgよりも配置を上にするためにrelativeをつける*/
+  z-index: 2/*#header-imgよりもz-indexの値を大きな数値にして上に表示*/
 }
 
 /*ロゴを中央に配置*/
