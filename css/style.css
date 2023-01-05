@@ -31,6 +31,7 @@ body {
   font-size: 16px;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.75;
+  text-align: center;
 }
 
 /* ---------- utility ---------- */
@@ -386,28 +387,19 @@ Contact
 }
 .circle-1 {
   background: rgb(255, 255, 255);
-  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
-  /* animation: border-animation 6s infinite linear; */
+  border-radius: 50%;
 }
 .circle-2 {
   background: rgb(255, 255, 255);
-  border-radius: 80% 30% 50% 50%/50%;
-  /* animation: border-animation 3s infinite linear; */
+  border-radius: 50%;
 }
 .circle-3 {
   background: rgb(255, 255, 255);
-  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
-  /* animation: border-animation 5s infinite linear; */
+  border-radius: 50%;
 }
 .circle-4 {
   background: rgb(255, 255, 255);
-  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
-  /* animation: border-animation 6s infinite linear; */
-}
-
-/* Animation */
-@keyframes border-animation {
-  to { transform: rotate(360deg); }
+  border-radius: 50%;
 }
 
 .copyright{
