@@ -60,6 +60,8 @@ $(function(){
     }
   }
 
+// ページトップリンク
+
 //スクロールした際の動きを関数でまとめる
 function PageTopCheck(){
     var winScrollTop = $(this).scrollTop();
@@ -85,8 +87,6 @@ $('.scroll-top a').click(function () {
   }
     return false;//リンク自体の無効化
 });
-
-// ページトップリンク
 
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
