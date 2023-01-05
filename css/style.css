@@ -88,7 +88,7 @@ Header
 .hamburger {
   width: 100px;
   height: 100px;
-  background-color: #ff2a2a;
+  background-color: var(--black-color);
   position: fixed;
   top: 0;
   right: 0;
@@ -103,7 +103,7 @@ Header
 .hamburger span {
   width: 50px;
   height: 2px ;
-  background: #fff;
+  background: var(--white-color);
   position: absolute;
   left: 25px;
   transition: 0.3s ease-in-out;
@@ -127,14 +127,14 @@ Header
 .hamburger.active span:nth-child(1) {
   top: 47px;
   left: 25px;
-  background :#fff;
+  background : var(--white-color);
   transform: rotate(-45deg);
 }
 /* 2本目と3本目は重ねて45度回転 */
 .hamburger.active span:nth-child(2),
 .hamburger.active span:nth-child(3) {
   top: 47px;
-  background: #fff;
+  background: var(--white-color);
   transform: rotate(45deg);
 }
 /*
@@ -145,7 +145,7 @@ Header
 #navi {
   width: 100%;
   height: 100vh;
-  background-color: #ff2a2a;
+  background-color: var(--black-color);
   color: #fff;
   position: fixed;
   top: 0;
@@ -182,8 +182,8 @@ Header
 }
 #navi .btn {
   width: 250px;
-  border: solid 1px #fff;
-  color: #fff;
+  border: solid 1px var(--white-color);
+  color: var(--white-color);
   display: block;
   font-weight: bold;
   padding: 15px 0;
@@ -195,15 +195,15 @@ Header
 #navi .btn::after {
   content: "　";
   width: 250px;
-  border-right: solid 1px #fff;
-  border-bottom: solid 1px #fff;
+  border-right: solid 1px var(--white-color);
+  border-bottom: solid 1px var(--white-color);
   padding: 15px 0;
   position: absolute;
   right: -6px;
   bottom: -6px;
 }
 #navi .btn:hover {
-  background-color: #fff;
+  background-color: var(--white-color);
   color: #ff2a2a;
 }
 
