@@ -304,6 +304,34 @@ ABOUT US
   border-color: transparent transparent transparent var(--black-color);
 }
 
+/*==ボタンの動き*/
+
+/* 回転前 */
+.rotatefront span:nth-child(1) {
+    background: var(--white-color);
+    color: var(--black-color);
+    transform: rotateX(0deg);/*はじめは回転なし*/
+    transform-origin: 0 50%  -25px;/* 回転する起点 */
+}
+
+/*hoverをした後の形状*/
+.rotatefront:hover span:nth-child(1) {
+    transform: rotateX(-90deg);/* X軸に-90度回転 */
+}
+
+/* 回転後 */
+.rotatefront span:nth-child(2) {
+    background: var(--black-color);
+    color: var(--white-color);
+    transform: rotateX(90deg);/*はじめはX軸に90度回転*/
+    transform-origin: 0 50%  -25px;/* 回転する起点 */
+}
+
+/*hoverをした後の形状*/
+.rotatefront:hover span:nth-child(2) {
+    transform: rotateX(0deg);/* X軸に0度回転 */
+}
+
 .top_about-wrapper {
   padding-top: 82px;
   text-align: center;
