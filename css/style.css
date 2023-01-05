@@ -588,7 +588,8 @@ Contact
   content: "お話を聞くだけでも大丈夫です！！\Aお気軽にお問い合わせください。";
   white-space: pre-wrap;
   color: #6E66D7;
-  top: 50px;
+  font-size: 14px;
+  top: 40px;
   position: absolute;
 }
 
