@@ -436,7 +436,7 @@ Message
 -------------------------------------------*/
 .message {
   font-size: 20px;
-  margin-top: 16px;
+  margin-top: 100px;
 }
 
 @keyframes bggradient{
@@ -589,7 +589,7 @@ Contact
   white-space: pre-wrap;
   color: #6E66D7;
   font-size: 14px;
-  top: 40px;
+  top: 50px;
   position: absolute;
 }
 
