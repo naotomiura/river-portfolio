@@ -41,6 +41,10 @@ body {
   );
 }
 
+section {
+  padding 24px 0px;
+}
+
 /* ---------- utility ---------- */
 .u_lg-dn {
   display: block;
