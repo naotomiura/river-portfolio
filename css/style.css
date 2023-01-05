@@ -1,47 +1,66 @@
 @charset "UTF-8";
 
-html {
-  font-size: 100%;
+:root {
+  /* 色管理用の変数 */
+  --black-color: #333;
+  --white-color: #fff;
+  --mark-color: #12389e;
+  --mark-color02: #5a2aa9;
+  --gray-color: rgb(255, 255, 255, 0.7);
 }
 
+:root {
+  /* コンテンツ幅管理用の変数 */
+  --content-width-sm: 343px;
+  --content-width: 960px;
+  --content-width-lg: 1088px;
+}
+
+:root {
+  /* z-index管理用の変数 */
+  --z-index-back: -1;
+  --z-index-default: 1;
+  --z-index-page-top: 50;
+  --z-index-header: 100;
+  --z-index-menu: 150;
+}
+
+/* ---------- base ---------- */
 body {
+  color: var(--white-color);
   font-size: 16px;
-  padding: 10%;
-  color: #333;
-  font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-  letter-spacing: 0.1em;
-  text-align: center;
-  background:linear-gradient(45deg, #3bade3,#9844b7,#ea44d1);
-  background-size: 200% 200%;
-  animation: bggradient 20s ease infinite;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.75;
 }
 
-@keyframes bggradient{
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+/* ---------- utility ---------- */
+.u_lg-dn {
+  display: block;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
+/* ---------- layout ---------- */
+
+.l_container-sm,
+.l_container,
+.l_container-lg {
+  width: 92%;
+  margin: 0 auto;
 }
-img {
-  max-width: 100%;
-  vertical-align: bottom;
+
+.l_container-sm {
+  max-width: var(--content-width-sm);
 }
-li {
-  list-style: none;
+
+.l_container {
+  max-width: var(--content-width);
+}
+
+.l_container-lg {
+  max-width: var(--content-width-lg);
 }
 
 /*-------------------------------------------
-ヘッダー
+Header
 -------------------------------------------*/
 
 
@@ -58,6 +77,144 @@ Vision
 /*-------------------------------------------
 ABOUT US
 -------------------------------------------*/
+
+.main_wrapper {
+  background: linear-gradient(
+    to bottom,
+    #a9bfdf,
+    #255faf 25%,
+    #5660cb 70%,
+    #b1a2f4
+  );
+  
+}
+
+.top_main-wrapper{
+  height: 2417px;
+}
+
+.top_about-wrapper {
+  padding-top: 82px;
+  text-align: center;
+}
+
+.top_about_content {
+  margin-top: 73px;
+}
+
+.top_about_text {
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+.top_about_text-wrapper:not(:first-child) {
+  margin-top: 42px;
+}
+
+.about_header {
+  height: 100vh;
+  background: url(../img/about_kv.png) 85% 0/cover;
+  position: relative;
+  z-index: 0;
+}
+.about_header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(44, 22, 129, 0.3);
+  
+
+}
+
+.about_header-inner {
+  height: 100%;
+  position: relative;
+}
+
+.about_title-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+.about_wrapper {
+  height: 2293px;
+  text-align: center;
+}
+
+.about_text-wrapper{
+  padding-top: 56px;
+}
+.about_big_text {
+  font-size: 20px;
+  text-shadow:0px 3px 6px rgb(2, 2, 3,0.8);
+}
+
+.about_text {
+  font-size: 14px;
+  line-height: 2.14;
+  margin-top: 15px;
+}
+
+.about_strength_wrapper {
+  margin-top: 90px;
+}
+
+.about_strength_title {
+  font-size: 18px;
+  position: relative;
+}
+
+.about_strength_title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 1px;
+  background-color: var(--white-color);
+}
+
+.about_strength_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 1px;
+  background-color: var(--white-color);
+}
+
+
+.about_strength_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 26px;
+}
+
+.about_strength_item {
+  background-color: #5a2aa9;
+  padding: 31px 21px;
+  border-radius:50%;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 2px 3px 6px rgb(26, 8, 138,0.58);
+}
+
+.about_strength_text {
+  font-size: 14px;
+  font-weight: medium;
+  margin-top: 40px;
+}
 
 /*-------------------------------------------
 GALLERY
