@@ -75,14 +75,6 @@ body {
 Header
 -------------------------------------------*/
 
-#header .site-title {
-  width: 100px;
-  line-height: 1px;
-}
-#header .site-title a {
-  display: block;
-}
-
 #header{
   position: relative;/*背景を設定するdivの基点とするためrelativeをかける*/
   width: 100%;
