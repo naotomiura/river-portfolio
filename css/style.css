@@ -307,7 +307,7 @@ ABOUT US
 /*==ボタンの動き*/
 
 /*ボタン内側の設定*/
-.btn span {
+.m_btn span {
     display: block;
     position: absolute;
     width: 100%;
@@ -344,6 +344,7 @@ ABOUT US
 .rotatefront:hover span:nth-child(2) {
     transform: rotateX(0deg);/* X軸に0度回転 */
 }
+
 
 .top_about-wrapper {
   padding-top: 82px;
