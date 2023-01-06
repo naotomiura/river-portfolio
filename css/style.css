@@ -736,6 +736,31 @@ ABOUT US
 GALLERY
 -------------------------------------------*/
 
+.top_gallery {
+  padding-top: 100px;
+  /* backgroundとpaddingは分かりやすいようにとりあえずで付けてるから
+  他と合わせた時に消してね */
+  background: linear-gradient(#1755aa, #6b63d6);
+  padding: 0 0 100px;
+}
+
+/* slick */
+.top_slider.__video {
+  margin-top: 40px;
+}
+
+.top_slider.__photo {
+  margin-top: 80px;
+}
+
+.top_slider-item {
+  margin: 0 10px;
+}
+
+.top_slider-item {
+  margin-bottom: 20px;
+}
+
 /*-------------------------------------------
 Message
 -------------------------------------------*/
