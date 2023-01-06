@@ -113,8 +113,8 @@ Header
 -------------------------------------------*/
 
 .hamburger {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: var(--black-color);
   position: fixed;
   top: 0;
@@ -126,26 +126,27 @@ Header
 .hamburger:hover {
   opacity: 0.7;
 }
+
 /* ハンバーガーメニューの線の設定（メニューが閉じている時） */
 .hamburger span {
-  width: 50px;
-  height: 2px ;
+  width: 45%;
+  height: 3px ;
   background: var(--white-color);
   position: absolute;
-  left: 25px;
+  left: 30px;
   transition: 0.3s ease-in-out;
 }
 /* 1本目の線の位置を設定 */
 .hamburger span:nth-child(1) {
-  top: 36px;
+  top: 15px;
 }
 /* 2本目の線の位置を設定 */
 .hamburger span:nth-child(2) {
-  top: 50px;
+  top: 23px;
 }
 /* 3本目の線の位置を設定 */
 .hamburger span:nth-child(3) {
-  top: 64px;
+  top: 31px;
 }
 /*
 ハンバーガーメニューの線の設定（メニューが開いている時）
