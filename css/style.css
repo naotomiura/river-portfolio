@@ -117,8 +117,8 @@ Header
   height: 50px;
   background-color: var(--black-color);
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   z-index: 30;
   cursor: pointer;
   transition: 0.3s;
