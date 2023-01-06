@@ -1068,10 +1068,11 @@ _:-ms-lang(x), .js-pagetop a::before{
   display: flex;
   justify-content:center;
   align-items:center;
-  background:var(--black-color);
+  background-image:linear-gradient(rgb(0, 0, 0) 50%, transparent 50%,transparent 100%);
+  background-size: 42px 42px;
+  width: 32px;
+  height: 600px;
   border-radius: 5px;
-  width: 60px;
-  height: 60px;
   text-align: center;
   text-transform: uppercase; 
   text-decoration: none;
