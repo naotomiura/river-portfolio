@@ -142,3 +142,16 @@ $(window).scroll(function() {
 			top: -(scroll/50)  + "%",//スクロール値を代入してtopの位置をマイナスにずらす
         });
     });
+
+
+// スライダー
+
+$(function() {
+    $('.m_slider').slick({
+        dots: true,
+        centerMode: true,
+        centerMargin: '30px',
+        arrows: false,
+        variableWidth: true
+    });
+});
