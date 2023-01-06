@@ -71,6 +71,116 @@ body {
   max-width: var(--content-width-lg);
 }
 
+/* ----------module-----------*/
+
+.m_title {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.m_title::before {
+  content: "私たちについて";
+  position: absolute;
+  top: -15%;
+  left: 20%;
+  font-size: 12px;
+  color: var(--gray-color);
+}
+
+.m_title_line {
+  width: 109px;
+  height: 2px;
+  background-color: var(--white-color);
+  margin-top: 7px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.m_top_text__primary {
+  font-weight: bold;
+  background: linear-gradient(transparent 40%, var(--mark-color) 60%);
+}
+
+.m_about_title {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.m_about_title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 1px;
+  background-color: var(--white-color);
+}
+
+.m_about_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 1px;
+  background-color: var(--white-color);
+}
+
+
+
+.m_about_text__primary {
+  font-weight: bold;
+  font-size: 14px;
+  background: linear-gradient(transparent 50%, var(--mark-color02) 50%);
+}
+
+
+
+.m_text__big-primary {
+  font-weight: bold;
+  font-size: 24px;
+  background: linear-gradient(transparent 40%, var(--mark-color02) 60%);
+}
+
+.m_btn-wrapper {
+  width: 174px;
+  height: 54px;
+  margin: 40px auto 0;
+}
+
+.m_btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
+  color: var(--black-color);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  background-color: var(--white-color);
+  font-size: 15px;
+  position: relative;
+}
+
+.m_btn::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--black-color);
+}
+
 /*-------------------------------------------
 Header
 -------------------------------------------*/
@@ -323,7 +433,7 @@ Vision
 }
 
 
-.m_title {
+.m_vision_title {
   font-size: 25px;
   font-weight: bold;
   position: relative;
@@ -333,7 +443,7 @@ Vision
   margin-bottom: 8px;
 }
 
-.m_title::before {
+.m_vision_title::before {
   content: "活動への想い";
   display: flex;
   justify-content: center;
@@ -342,7 +452,7 @@ Vision
   text-shadow: 0px 3px 6px rgb(5, 8, 90, 0.18);
 }
 
-.m_title_line {
+.m_vision_title_line {
   width: 109px;
   height: 2px;
   background-color: #000;
@@ -432,45 +542,6 @@ ABOUT US
   border-style: solid;
   border-color: transparent transparent transparent var(--black-color);
 }
-
-/*==ボタンの動き*/
-
-/*ボタン内側の設定*/
-.m_btn span {
-    display: block;
-    position: absolute;
-    /* 重なりを3Dで表示 */
-    transform-style: preserve-3d;
-    /* アニメーションの設定 数字が少なくなるほど早く回転 */
-    transition: 0.5s;
-}
-
-/* 回転前 */
-.rotatefront span:nth-child(1) {
-    background: var(--white-color);
-    color: var(--black-color);
-    transform: rotateX(0deg);/*はじめは回転なし*/
-    transform-origin: 0 50%  -25px;/* 回転する起点 */
-}
-
-/*hoverをした後の形状*/
-.rotatefront:hover span:nth-child(1) {
-    transform: rotateX(-90deg);/* X軸に-90度回転 */
-}
-
-/* 回転後 */
-.rotatefront span:nth-child(2) {
-    background: var(--black-color);
-    color: var(--white-color);
-    transform: rotateX(90deg);/*はじめはX軸に90度回転*/
-    transform-origin: 0 50%  -25px;/* 回転する起点 */
-}
-
-/*hoverをした後の形状*/
-.rotatefront:hover span:nth-child(2) {
-    transform: rotateX(0deg);/* X軸に0度回転 */
-}
-
 
 .top_about-wrapper {
   padding-top: 82px;
