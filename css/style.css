@@ -238,11 +238,118 @@ Header
 Mainvisual
 -------------------------------------------*/
 
+.top_kv {
+  height: 100vh;
+  width: 100%;
+  background: url(./img/pt1.jpg) 39% 0 / cover;
+  position: relative;
+}
+
+.top_kv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#333aa5, #333aa5);
+  opacity: 0.48;
+}
+
+.top_kv_box {
+  position: absolute;
+  left: -42px;
+  margin-top: 52px;
+  width: 326px;
+  height: 202px;
+  border-radius: 50%;
+  background-color: rgb(51, 58, 165, 0.48);
+  background-color: rgb(255, 255, 255, 0.74);
+  z-index: 5;
+}
+
+.top_kv_copy {
+  color: #fff;
+  text-shadow: 0px 3px 10px #000;
+  line-height: 5px;
+  font-weight: bold;
+  position: absolute;
+  position: relative;
+}
+
+.top_kv_copy_1 {
+  font-size: 25px;
+  left: 16px;
+  position: absolute;
+  left: 63px;
+  top: 15px;
+}
+
+.top_kv_copy_2 {
+  font-size: 45px;
+  position: absolute;
+  left: 80px;
+  top: 50px;
+}
+
+.top_kv_copy_3 {
+  font-size: 37px;
+  position: absolute;
+  left: 170px;
+  top: 115px;
+}
 
 /*-------------------------------------------
 Vision
 -------------------------------------------*/
 
+.top_vision_text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.top_vision_text {
+  font-size: 14px;
+  color: #000;
+  line-height: 25px;
+  margin: auto;
+}
+
+.top_vision_text_emphasis {
+  font-weight: bold;
+}
+
+
+.m_title {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  margin-top: 80px;
+  margin-bottom: 8px;
+}
+
+.m_title::before {
+  content: "活動への想い";
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: rgb(0, 0, 0, 0.51);
+  text-shadow: 0px 3px 6px rgb(5, 8, 90, 0.18);
+}
+
+.m_title_line {
+  width: 109px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /*-------------------------------------------
 ABOUT US
