@@ -133,7 +133,7 @@ Header
   height: 3px ;
   background: var(--white-color);
   position: absolute;
-  left: 30px;
+  left: 15px;
   transition: 0.3s ease-in-out;
 }
 /* 1本目の線の位置を設定 */
@@ -153,15 +153,15 @@ Header
 1本目の線を-45度回転
 */
 .hamburger.active span:nth-child(1) {
-  top: 47px;
-  left: 25px;
+  top: 20px;
+  left: 15px;
   background : var(--white-color);
   transform: rotate(-45deg);
 }
 /* 2本目と3本目は重ねて45度回転 */
 .hamburger.active span:nth-child(2),
 .hamburger.active span:nth-child(3) {
-  top: 47px;
+  top: 20px;
   background: var(--white-color);
   transform: rotate(45deg);
 }
