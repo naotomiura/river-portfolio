@@ -15,6 +15,18 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css">
     
+    <!-- slider_css     -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    
   </head>
 
   <body>
@@ -129,8 +141,68 @@
 
       <!-- GALLARY -->
       <section id="">
-        <h2 class=""><span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">GALLARY</span></span></h2>
-        
+        <div class="top_gallery">
+          <div class="m_section_ttl-wrapper">
+            <h1 class="m_section_ttl __gallery">GALLERY</h1>
+          </div>
+
+          <div class="top_slider __video">
+            <div class="top_slider-item">
+              <iframe
+                class="youtube"
+                width="258"
+                height="154"
+                data-src="https://www.youtube-nocookie.com/embed/s6Z9HlDd9RI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="top_slider-item">
+              <iframe
+                class="youtube"
+                width="258"
+                height="154"
+                data-src="https://www.youtube-nocookie.com/embed/vzUBGRWXQ8w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="top_slider-item">
+              <iframe
+                class="youtube"
+                width="258"
+                height="154"
+                data-src="https://www.youtube-nocookie.com/embed/HVKEuVZZeBM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="top_slider __photo">
+            <div class="top_slider-item">
+              <img src="img/photo01.jpg" alt="DJの写真" class="top_photo_img" />
+            </div>
+            <div class="top_slider-item">
+              <img src="img/photo02.jpg" alt="DJの写真" class="top_photo_img" />
+            </div>
+            <div class="top_slider-item">
+              <img src="img/photo03.jpg" alt="DJの写真" class="top_photo_img" />
+            </div>
+          </div>
+
+          <div class="m_detail_btn-wrapper">
+            <a href="gallery.html" class="m_arrow-btn">
+              詳しく見る
+            </a>
+          </div>
+        </div> 
       </section>
         
       <!-- MESSAGE -->
@@ -169,6 +241,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/main.js"></script>
+      
+    <!-- sliderのjs -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      defer
+    ></script>
      
     <!-- トップリンクページのjs-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
