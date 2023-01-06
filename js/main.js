@@ -142,3 +142,34 @@ $(window).scroll(function() {
 			top: -(scroll/50)  + "%",//スクロール値を代入してtopの位置をマイナスにずらす
         });
     });
+
+
+// slider
+
+$(document).ready(function () {
+  $(".top_slider.__video").slick({
+    arrows: false,
+    dots: true,
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 10000,
+  });
+});
+
+$(document).ready(function () {
+  $(".top_slider.__photo").slick({
+    arrows: false,
+    dots: true,
+    centerMode: true,
+  });
+});
+
+function youtube_defer() {
+  var iframes = document.querySelectorAll(".youtube");
+  iframes.forEach(function (iframe) {
+    if (iframe.getAttribute("data-src")) {
+      iframe.setAttribute("src", iframe.getAttribute("data-src"));
+    }
+  });
+}
+window.addEventListener("load", youtube_defer);
