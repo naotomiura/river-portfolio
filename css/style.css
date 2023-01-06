@@ -41,10 +41,6 @@ body {
   );
 }
 
-#section {
-  padding 24px 0px;
-}
-
 /* ---------- utility ---------- */
 .u_lg-dn {
   display: block;
@@ -83,9 +79,8 @@ body {
 
 .m_title::before {
   content: "私たちについて";
-  position: absolute;
-  top: -15%;
-  left: 20%;
+  display: flex;
+  justify-content: center;
   font-size: 12px;
   color: var(--gray-color);
 }
@@ -531,84 +526,6 @@ Vision
 ABOUT US
 -------------------------------------------*/
 
-.m_title {
-  font-size: 25px;
-  font-weight: bold;
-  position: relative;
-  text-align: center;
-  z-index: 1;
-}
-
-.m_title::before {
-  content: "私たちについて";
-  position: absolute;
-  top: -15%;
-  left: 38%;
-  font-size: 12px;
-  color: var(--gray-color);
-}
-
-.m_title_line {
-  width: 109px;
-  height: 2px;
-  background-color: var(--white-color);
-  margin-top: 7px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.m_top_text__primary {
-  font-weight: bold;
-  background: linear-gradient(transparent 40%, var(--mark-color) 60%);
-}
-
-.m_about_text__primary {
-  font-weight: bold;
-  font-size: 14px;
-  background: linear-gradient(transparent 50%, var(--mark-color02) 50%);
-}
-
-
-
-.m_text__big-primary {
-  font-weight: bold;
-  font-size: 24px;
-  background: linear-gradient(transparent 40%, var(--mark-color02) 60%);
-}
-
-.m_btn-wrapper {
-  width: 174px;
-  height: 54px;
-  margin: 40px auto 0;
-}
-
-.m_btn {
-  width: 100%;
-  height: 100%;
-  border-radius: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
-  color: var(--black-color);
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  background-color: var(--white-color);
-  font-size: 15px;
-  position: relative;
-}
-
-.m_btn::after {
-  content: "";
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-width: 6px;
-  border-style: solid;
-  border-color: transparent transparent transparent var(--black-color);
-}
-
 .top_about-wrapper {
   padding-top: 82px;
   text-align: center;
@@ -737,10 +654,7 @@ GALLERY
 -------------------------------------------*/
 
 .top_gallery {
-  padding-top: 100px;
-  /* backgroundとpaddingは分かりやすいようにとりあえずで付けてるから
-  他と合わせた時に消してね */
-  background: linear-gradient(#1755aa, #6b63d6);
+  margin-top: 100px;
   padding: 0 0 100px;
 }
 
@@ -1021,7 +935,7 @@ transform: translateY(0);
 /*リンク全体の aタグの形状*/
 .scroll-top a {
   text-decoration: none;
-  color: #666;
+  color: var(--white-color);
   text-transform: uppercase;
   font-size:0.9rem;
     display: block;
