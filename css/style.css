@@ -1072,7 +1072,6 @@ _:-ms-lang(x), .js-pagetop a::before{
   border-radius: 5px;
   width: 60px;
   height: 60px;
-  color: #fff;
   text-align: center;
   text-transform: uppercase; 
   text-decoration: none;
@@ -1081,12 +1080,12 @@ _:-ms-lang(x), .js-pagetop a::before{
 }
 
 #page-top a:hover{
-  background: #777;
+  background: var(--black-color);
 }
 
 @media screen and (max-width:768px) {
   #page-top a:hover{
-   background:#942D2F;
+   background:var(--black-color);
  }   
  }
  
