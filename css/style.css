@@ -1362,10 +1362,12 @@ _:-ms-lang(x), .js-pagetop a::before{
     transform: rotateZ(90deg);
     padding-top: 250px;
     color: rgba(154, 65, 10,0.7);
+	  font-family: 'Geo', sans-serif;
   }
 
   .gallary-right{
     color: var(--white-color);
+	  font-family: 'Geo', sans-serif;
     display: inline-block;
     transform: rotateZ(90deg);
     color: rgba(154, 65, 10,0.7);
