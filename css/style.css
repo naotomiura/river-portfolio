@@ -101,9 +101,10 @@ body {
 
 .m_about_title {
   font-size: 18px;
+  font-weight:bold;
   position: relative;
-  margin-bottom: 30px;
-  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-top: 70px;
 }
 
 .m_about_title::before {
@@ -115,6 +116,7 @@ body {
   width: 30px;
   height: 1px;
   background-color: var(--white-color);
+  margin-right: 20px;
 }
 
 .m_about_title::after {
@@ -126,7 +128,10 @@ body {
   width: 30px;
   height: 1px;
   background-color: var(--white-color);
+  margin-left: 20px;
 }
+
+
 
 .m_about_text__primary {
   font-weight: bold;
@@ -761,10 +766,9 @@ ABOUT US
 /*-------------------------------------------
 GALLERY
 -------------------------------------------*/
-
 .top_gallery {
-  margin-top: 100px;
-  padding: 0 0 100px;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, .8);
 }
 
 /* slick */
@@ -1303,4 +1307,19 @@ _:-ms-lang(x), .js-pagetop a::before{
     transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
     opacity: 1;
     }
+  }
+
+  .gallary-left{
+    color: var(--white-color);
+    display: inline-block;
+    transform: rotateZ(90deg);
+    padding-top: 250px;
+    color: rgba(154, 65, 10,0.7);
+  }
+
+  .gallary-right{
+    color: var(--white-color);
+    display: inline-block;
+    transform: rotateZ(90deg);
+    color: rgba(154, 65, 10,0.7);
   }
