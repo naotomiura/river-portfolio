@@ -1357,7 +1357,6 @@ _:-ms-lang(x), .js-pagetop a::before{
   }
 
   .gallary-left{
-    color: var(--white-color);
     display: inline-block;
     transform: rotateZ(90deg);
     padding-top: 250px;
@@ -1366,7 +1365,6 @@ _:-ms-lang(x), .js-pagetop a::before{
   }
 
   .gallary-left-2{
-    color: var(--white-color);
     display: inline-block;
     transform: rotateZ(90deg);
     padding-top: 175px;
@@ -1375,8 +1373,7 @@ _:-ms-lang(x), .js-pagetop a::before{
   }
 
   .gallary-right{
-    color: var(--white-color);
-	  font-family: 'Geo', sans-serif;
+    font-family: 'Geo', sans-serif;
     display: inline-block;
     transform: rotateZ(90deg);
     color: rgba(154, 65, 10,0.7);
