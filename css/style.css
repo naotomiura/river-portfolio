@@ -431,7 +431,7 @@ Mainvisual
 .top_kv {
   height: 100vh;
   width: 100%;
-  background: url(/img/photo04.jpg) 39% 0 / cover;
+  background: url(img/photo04.jpg) 39% 0 / cover;
   position: relative;
 }
 
@@ -780,7 +780,7 @@ ABOUT US
 /*-------------------------------------------
 GALLERY
 -------------------------------------------*/
-.gallery_inner {
+.top_gallery {
   padding-top: 100px;
   background-color: rgba(0, 0, 0, .8);
 }
