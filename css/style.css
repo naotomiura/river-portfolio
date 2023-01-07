@@ -103,6 +103,7 @@ body {
   font-size: 18px;
   position: relative;
   margin-bottom: 30px;
+  margin-top: 60px;
 }
 
 .m_about_title::before {
