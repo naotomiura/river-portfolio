@@ -801,6 +801,21 @@ GALLERY
   padding-top: 80px;
 }
 
+.top_gallery_title-wrapper {
+  position: relative;
+}
+
+.top_gallery_title-wrapper::before {
+  content: "";
+  width: 109px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* slick */
 .top_slider.__video {
   margin-top: 40px;
