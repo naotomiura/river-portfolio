@@ -403,7 +403,7 @@ Header
 }
 #navi .btn:hover {
   background-color: var(--white-color);
-  color: #ff2a2a;
+  color: var(--black-color);
 }
 
 /*-------------------------------------------
