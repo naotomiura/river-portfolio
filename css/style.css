@@ -1247,34 +1247,6 @@ _:-ms-lang(x), .js-pagetop a::before{
 /*==================================================
 ギャラリーのためのcss
 ===================================*/
-.gallrey_kv {
-  height: 100vh;
-  position: relative;
-  z-index: -1;
-}
-
-.gallery_inner {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.gallrey_kv-wrapper {
-  width: 100%;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-}
-
-.gallery_kv-img {
-  width: 100%;
-  height: calc(100% / 3);
-  object-fit: cover;
-}
-
-.gallrey_kv-ttl {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
 .gallery{
   columns: 4;/*段組みの数*/
   padding:0 50px;/*ギャラリー左右に余白をつける*/
