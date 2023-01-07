@@ -1195,7 +1195,7 @@ _:-ms-lang(x), .js-pagetop a::before{
   display: flex;
   justify-content:center;
   align-items:center;
-  background-image:linear-gradient(rgb(0, 0, 0) 50%, transparent 50%,transparent 100%);
+  background-image:linear-gradient(rgb(255,255,255) 50%, transparent 50%,transparent 100%);
   background-size: 42px 42px;
   width: 32px;
   height: 600px;
