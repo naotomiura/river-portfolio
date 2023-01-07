@@ -139,7 +139,7 @@ body {
 
 .m_text__big-primary {
   font-weight: bold;
-  font-size: 24px;
+  font-size: px;
   background: linear-gradient(transparent 40%, var(--mark-color02) 60%);
 }
 
@@ -729,6 +729,7 @@ ABOUT US
   font-size: 16px;
   font-weight: medium;
   line-height: 1.87;
+  margin:20px 36px;
 }
 
 .about_invitation_copy-wrapper {
