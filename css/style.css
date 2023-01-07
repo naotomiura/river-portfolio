@@ -649,6 +649,47 @@ ABOUT US
   margin-top: 40px;
 }
 
+.about_slider-item {
+  width: 270px;
+  height: 270px;
+  border: 1px solid var(--white-color);
+  background-color: rgba(218, 189, 229, 0.11);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.slider-txt {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 17px;
+  color: var(--white-color);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, .4);
+  padding-top: 15px;
+}
+
+.slider-txt02 {
+  padding-top: 30px;
+}
+
+.slider-txt03 {
+  padding-top: 40px;
+}
+
+.slick-center {
+  margin: 0 30px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #eee;
+}
+
+.slick-dots li button:before {
+  color: var(--white-color);
+}
+
+
 /*-------------------------------------------
 GALLERY
 -------------------------------------------*/
