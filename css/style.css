@@ -868,8 +868,8 @@ Contact
 .contact_title::before{
   content: "連絡先";
   position: absolute;
-  color: var(--white-color);
-  font-size: 0.2em;
+  color: var(--gray-color);
+  font-size: 12px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
