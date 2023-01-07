@@ -1364,7 +1364,7 @@ _:-ms-lang(x), .js-pagetop a::before{
 	  font-family: 'Geo', sans-serif;
   }
 
-  .gallary-left-2{
+  .gallary-left_2{
     display: inline-block;
     transform: rotateZ(90deg);
     padding-top: 175px;
