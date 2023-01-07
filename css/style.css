@@ -1365,6 +1365,15 @@ _:-ms-lang(x), .js-pagetop a::before{
 	  font-family: 'Geo', sans-serif;
   }
 
+  .gallary-left-2{
+    color: var(--white-color);
+    display: inline-block;
+    transform: rotateZ(90deg);
+    padding-top: 175px;
+    color: rgba(154, 65, 10,0.7);
+	  font-family: 'Geo', sans-serif;
+  }
+
   .gallary-right{
     color: var(--white-color);
 	  font-family: 'Geo', sans-serif;
