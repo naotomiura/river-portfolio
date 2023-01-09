@@ -425,7 +425,7 @@ Mainvisual
 .top_kv_copy {
   color: var(--white-color);
   font-weight: bold;
-  text-shadow: 0px 3px 10px #000;
+  text-shadow: 0 3px 10px #000;
   position: relative;
 }
 
@@ -469,21 +469,14 @@ Vision
   text-shadow: 0px 3px 6px rgb(5, 8, 90, 0.18);
 }
 
-.m_vision_title_line {
-  width: 109px;
-  height: 2px;
-  background-color: var(--white-color);
-  margin-bottom: 40px;
-  margin-right: auto;
-  margin-left: auto;
+.top_vision_content {
+  margin-top: 30px;
 }
 
 .top_vision_text-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-bottom: 80px;
 }
 
 .top_vision_text {
@@ -595,7 +588,7 @@ ABOUT US
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-top: 26px;
+  margin-top: 32px;
 }
 
 .about_strength_item {
@@ -821,36 +814,25 @@ Message
   font-weight: bold;
   color:#FFEB00;
   padding-top: 40px;
-  text-align: center;
 }
 
 /*-------------------------------------------
 Contact
 -------------------------------------------*/
-.contact_title{
-  font-size: 30px;
+.top_contact_title {
+  font-size: 25px;
+  font-weight: bold;
   position: relative;
-  color: var(--white-color);
+  z-index: 1;
 }
 
-.contact_title::before{
+.top_contact_title::before {
   content: "連絡先";
-  position: absolute;
-  color: var(--gray-color);
+  display: flex;
+  justify-content: center;
   font-size: 12px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.contact_title::after{
-  content: "";
-  position: absolute;
-  width:  120px;
-  height: 2%;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--white-color);
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0px 3px 6px rgb(5, 8, 90, 0.18);
 }
 
 .contact_name{
