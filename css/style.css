@@ -99,7 +99,7 @@ body {
 
 .m_top_text__primary {
   font-weight: bold;
-  background: linear-gradient(transparent 40%, var(--mark-color) 60%);
+  background: linear-gradient(transparent 40%, var(--mark-color) 40%);
 }
 
 .about_title {
@@ -780,7 +780,7 @@ Message
 
 .accentuation{
   font-size: 25px;
-  background:linear-gradient(transparent 60%, #948C27 80%);
+  background:linear-gradient(transparent 60%, #948C27 60%);
 }
 
 .main-message{
