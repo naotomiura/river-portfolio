@@ -1163,6 +1163,16 @@ _:-ms-lang(x), .js-pagetop a::before{
 /*==================================================
 ギャラリーのためのcss
 ===================================*/
+.footer {
+  position: relative;
+  z-index: 2;
+  padding: 20px 0px;
+  background-color: rgb(51, 51, 51);
+  border: none;
+}
+
+
+
 .gallrey_kv {
   height: 100vh;
   position: relative;
@@ -1170,7 +1180,10 @@ _:-ms-lang(x), .js-pagetop a::before{
 }
 
 .gallery_inner {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url(../img/Gallery-bg.jpg);
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
 }
 
 .gallrey_kv {
@@ -1196,84 +1209,148 @@ _:-ms-lang(x), .js-pagetop a::before{
   left: 50%;
 }
 
-.gallery{
-  columns: 4;/*段組みの数*/
-  padding:0 50px;/*ギャラリー左右に余白をつける*/
-  }
-  
-  .gallery li {
-      margin-bottom: 20px;/*各画像下に余白をつける*/
-  }
-  
-  /*ギャラリー内のイメージは横幅100%にする*/
-  .gallery img{
-    width:100%;
-    height:auto;
-    vertical-align: bottom;/*画像の下にできる余白を削除*/}
-  
-    ul{
-      margin:0;
-      padding: 0;
-      list-style: none;
-    }
+.gallery {
+  columns: 4; /*段組みの数*/
+  padding: 0 50px; /*ギャラリー左右に余白をつける*/
+}
 
-  /*　横幅900px以下の段組み設定　*/
-  @media only screen and (max-width: 900px) {
-    .gallery{
-    columns:1;
-    } 
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .gallery{
+.gallery li {
+  margin-bottom: 20px;
+  width: calc(100vw - 102px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*各画像下に余白をつける*/
+}
+
+/*ギャラリー内のイメージは横幅100%にする*/
+.gallery img {
+  width: calc(100vw - 102px);
+  height: auto;
+  vertical-align: bottom; /*画像の下にできる余白を削除*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*　横幅900px以下の段組み設定　*/
+@media only screen and (max-width: 900px) {
+  .gallery {
     columns: 1;
-    } 
   }
-  
-  
-  
-  /*画像を出現させるアニメーションCSS*/
-  
-  .flipLeft{
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery {
+    columns: 1;
+  }
+}
+
+/*画像を出現させるアニメーションCSS*/
+
+.flipLeft {
   animation-name: flipLeft;
-  animation-duration:0.5s;
-  animation-fill-mode:forwards;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
   perspective-origin: left center;
   opacity: 0;
-  }
-  
-  @keyframes flipLeft{
-    from {
-     transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+}
+
+@keyframes flipLeft {
+  from {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
     opacity: 0;
-    }
-  
-    to {
+  }
+
+  to {
     transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
     opacity: 1;
-    }
   }
+}
 
-  .gallary-left{
-    display: inline-block;
-    transform: rotateZ(90deg);
-    padding-top: 250px;
-    color: rgba(154, 65, 10,0.7);
-	  font-family: 'Geo', sans-serif;
-  }
+.gallery-con {
+  position: relative;
+}
 
-  .gallary-left_2{
-    display: inline-block;
-    transform: rotateZ(90deg);
-    padding-top: 175px;
-    color: rgba(154, 65, 10,0.7);
-	  font-family: 'Geo', sans-serif;
-  }
+.gallery-yoko {
+  transform: rotateZ(90deg);
+  padding-top: 250px;
+}
 
-  .gallary-right{
-    font-family: 'Geo', sans-serif;
-    display: inline-block;
-    transform: rotateZ(90deg);
-    color: rgba(154, 65, 10,0.7);
-  }
-  
+.gallery-left {
+  color: var(--white-color);
+  display: inline-block;
+  transform: rotateZ(90deg);
+  padding-top: 250px;
+  color: rgba(154, 65, 10, 0.7);
+  font-family: "VT323", monospace;
+  font-size: 40px;
+}
+
+.gallery-left-11 {
+  display: inline-block;
+  color: rgba(154, 65, 10, 0.7);
+  font-family: "VT323", monospace;
+  font-size: 40px;
+}
+
+.gallery-left-12 {
+  display: inline-block;
+  font-family: "VT323", monospace;
+  font-size: 40px;
+  color: #a9bfdf;
+  margin-left: 20px;
+}
+
+.gallery-left-21 {
+  display: inline-block;
+  font-family: "VT323", monospace;
+  font-size: 40px;
+  color: #a9bfdf;
+}
+
+.gallery-left-22 {
+  display: inline-block;
+  color: rgba(154, 65, 10, 0.7);
+  font-family: "VT323", monospace;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.gallery-left-white {
+  color: #a9bfdf;
+}
+
+.gallery-left-first {
+  color: var(--white-color);
+  display: inline-block;
+  transform: rotateZ(90deg);
+  padding-top: 250px;
+  color: rgba(154, 65, 10, 0.7);
+  font-family: "VT323", monospace;
+  font-size: 40px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.gallery-left-second {
+  margin-left: 20px;
+}
+
+.gallery-right {
+  color: var(--white-color);
+  display: inline-block;
+  transform: rotateZ(90deg);
+  color: rgba(154, 65, 10, 0.7);
+  font-family: "VT323", monospace;
+  font-size: 40px;
+  align-items: start;
+  display: flex;
+  position: absolute;
+  top: -240px;
+  right: 20px;
+}
