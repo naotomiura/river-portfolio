@@ -493,7 +493,7 @@ Vision
 ABOUT US
 -------------------------------------------*/
 .top_about_content {
-  margin-top: 73px;
+  margin-top: 30px;
 }
 
 .top_about_text {
@@ -733,21 +733,6 @@ GALLERY
   font-size: 12px;
   color: rgba(255, 255, 255, .7);
   text-shadow: 0px 3px 6px rgb(5, 8, 90, 0.18);
-}
-
-.top_gallery_title-wrapper {
-  position: relative;
-}
-
-.top_gallery_title-wrapper::before {
-  content: "";
-  width: 109px;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* slick */
