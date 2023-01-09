@@ -154,44 +154,9 @@ body {
   background: linear-gradient(transparent 50%, var(--mark-color02) 50%);
 }
 
-
-
 .m_text__big-primary {
   font-weight: bold;
   background: linear-gradient(transparent 40%, var(--mark-color02) 40%);
-}
-
-.m_btn-wrapper {
-  width: 174px;
-  height: 54px;
-  margin: 40px auto 0;
-}
-
-.m_btn {
-  width: 100%;
-  height: 100%;
-  border-radius: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
-  color: var(--black-color);
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  background-color: var(--white-color);
-  font-size: 15px;
-  position: relative;
-}
-
-.m_btn::after {
-  content: "";
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-width: 6px;
-  border-style: solid;
-  border-color: transparent transparent transparent var(--black-color);
 }
 
 .m_detail_btn-wrapper {
